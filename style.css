@@ -1,0 +1,94 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+  text-align: center;
+  color: white;
+
+  background: linear-gradient(
+    to bottom,
+    #da121a 0%,
+    #ffffff 25%,
+    #241d4f 50%,
+    #ffffff 75%,
+    #da121a 100%
+  );
+}
+
+.home {
+  background-color: rgba(255, 255, 255, 0.85);
+  padding: 40px;
+  border-radius: 15px;
+  width: 60%;
+  margin: 100px auto;
+  color: black;
+}
+
+h1 {
+  font-size: 48px;
+}
+
+p {
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+button {
+  padding: 12px 25px;
+  margin: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+/*ของหน้าเกม*/
+.game-container {
+  background: white;
+  color: black;
+  width: 400px;
+  margin: 80px auto;
+  padding: 30px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+input {
+  padding: 8px;
+  width: 80%;
+  margin: 10px 0;
+}
+
+button {
+  padding: 10px 20px;
+  margin: 5px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+}
+
+#timer {
+  font-weight: bold;
+  font-size: 20px;
+  color: red;
+}
+
+#menu button {
+  padding: 12px 25px;
+  margin: 10px;
+  font-size: 18px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+}
+
+footer {
+    background-color: #eef3fb;
+    color: black;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+}

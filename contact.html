@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ติดต่อผู้พัฒนา</title>
+
+<style>
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #0d47a1, #1976d2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.card {
+  background: white;
+  width: 350px;
+  border-radius: 20px;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.3);
+  text-align: center;
+  padding: 30px;
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+.profile-img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 4px solid #1976d2;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+h1 {
+  margin: 10px 0 5px;
+  color: #0d47a1;
+}
+
+.role {
+  color: gray;
+  margin-bottom: 20px;
+}
+
+.social a {
+  display: inline-block;
+  margin: 8px;
+  padding: 10px 15px;
+  border-radius: 30px;
+  text-decoration: none;
+  color: white;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.facebook { background: #1877f2; }
+.email { background: #e53935; }
+.github { background: #333; }
+
+.social a:hover {
+  transform: scale(1.1);
+}
+
+.home-btn {
+  margin-top: 20px;
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 25px;
+  background: #0d47a1;
+  color: white;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.home-btn:hover {
+  background: #1565c0;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+</style>
+</head>
+
+<body>
+
+<div class="card">
+  <h1>นางสาว ณัฐธิดา ประเสริฐแก้ว</h1>
+  <div class="role">ผู้พัฒนาเกมทายจังหวัดไทย 🇹🇭</div>
+
+  <div class="social">
+  <a href="https://www.facebook.com/share/1CbVzMx1xT/" class="facebook">Facebook</a>
+
+  <a href="#" class="email"
+     onclick="alert('Email: your@email.com')">
+     Email
+  </a>
+
+  <a href="#" class="github"
+     onclick="alert('GitHub: ยังไม่มี')">
+     GitHub
+  </a>
+</div>
+
+  <a href="index.html" class="home-btn">⬅ กลับหน้าหลัก</a>
+</div>
+
+</body>
+</html>

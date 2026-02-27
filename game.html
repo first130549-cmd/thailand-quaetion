@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <title>เริ่มเกม - เกมทายจังหวัด</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="game-container">
+
+  <div id="menu">
+  <h1>🎯 เลือกจำนวนข้อ</h1>
+  <button onclick="selectQuestionCount(10)">10 ข้อ</button>
+  <button onclick="selectQuestionCount(15)">15 ข้อ</button>
+  <button onclick="selectQuestionCount(20)">20 ข้อ</button>
+  <button onclick="selectQuestionCount(25)">25 ข้อ</button>
+  <button onclick="selectQuestionCount(30)">30 ข้อ</button>
+  <button onclick="selectQuestionCount(10)">35 ข้อ</button>
+  <button onclick="selectQuestionCount(15)">40 ข้อ</button>
+  <button onclick="selectQuestionCount(20)">45 ข้อ</button>
+  <button onclick="selectQuestionCount(25)">50 ข้อ</button>
+  <button onclick="selectQuestionCount(30)">55 ข้อ</button>
+  
+</div>
+
+  <div id="game" style="display:none;">
+    <h1>🎯 ทายจังหวัดจากคำใบ้</h1>
+
+    <p id="hint"></p>
+
+    <input type="text" id="answer" placeholder="พิมพ์ชื่อจังหวัด" onkeypress="if(event.key==='Enter') checkAnswer()">
+    <br>
+    <button onclick="checkAnswer()">ตอบ</button>
+
+    <p id="result"></p>
+
+    <p>คะแนน: <span id="score">0</span></p>
+    <p>ข้อที่: <span id="questionNumber">1</span>/<span id="totalQuestions"></span></p>
+    <p>เวลา: <span id="timer">30</span> วินาที</p>
+  </div>
+
+</div>
+<audio id="correctSound" src="dragon-studio-correct-472358.mp3"></audio>
+<audio id="wrongSound" src="eritnhut1992-buzzer-or-wrong-answer-20582.mp3"></audio>
+
+<script src="script.js"></script>
+
+</body>
+</html>
