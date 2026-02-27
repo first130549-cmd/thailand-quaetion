@@ -3,6 +3,7 @@ body {
   font-family: sans-serif;
   text-align: center;
   color: white;
+  min-height: 100vh;
 
   background: linear-gradient(
     to bottom,
@@ -14,12 +15,14 @@ body {
   );
 }
 
+
 .home {
   background-color: rgba(255, 255, 255, 0.85);
-  padding: 40px;
+  padding: 30px;
   border-radius: 15px;
-  width: 60%;
-  margin: 100px auto;
+  width: 90%;
+  max-width: 600px;
+  margin: 80px auto;
   color: black;
 }
 
@@ -49,25 +52,30 @@ button:hover {
 .game-container {
   background: white;
   color: black;
-  width: 400px;
+  width: 90%;
+  max-width: 400px;
   margin: 80px auto;
   padding: 30px;
   border-radius: 10px;
   text-align: center;
 }
 
+
 input {
   padding: 8px;
-  width: 80%;
+  width: 100%;
   margin: 10px 0;
+  box-sizing: border-box;
 }
 
 button {
-  padding: 10px 20px;
-  margin: 5px;
-  border-radius: 6px;
+  padding: 12px 20px;
+  margin: 8px 0;
+  font-size: 16px;
   border: none;
+  border-radius: 8px;
   cursor: pointer;
+  width: 100%;
 }
 
 #timer {
@@ -86,9 +94,10 @@ button {
 }
 
 footer {
-    background-color: #eef3fb;
-    color: black;
-    text-align: center;
-    padding: 20px;
-    font-size: 14px;
+  background-color: #eef3fb;
+  color: black;
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+  margin-top: 40px;
 }

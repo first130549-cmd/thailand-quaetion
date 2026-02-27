@@ -13,12 +13,22 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+/* จัดการ์ด 2 ใบ */
+.container {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .card {
   background: white;
-  width: 350px;
+  width: 100%;
+  max-width: 350px;
   border-radius: 20px;
   box-shadow: 0 15px 40px rgba(0,0,0,0.3);
   text-align: center;
@@ -38,6 +48,7 @@ body {
 h1 {
   margin: 10px 0 5px;
   color: #0d47a1;
+  font-size: 20px;
 }
 
 .role {
@@ -65,9 +76,9 @@ h1 {
 }
 
 .home-btn {
-  margin-top: 20px;
+  margin-top: 30px;
   display: inline-block;
-  padding: 10px 20px;
+  padding: 12px 25px;
   border-radius: 25px;
   background: #0d47a1;
   color: white;
@@ -83,29 +94,47 @@ h1 {
   from { opacity: 0; transform: translateY(20px); }
   to { opacity: 1; transform: translateY(0); }
 }
+
+/* มือถือ */
+@media (max-width: 480px) {
+  .card {
+    padding: 20px;
+  }
+}
 </style>
 </head>
 
 <body>
 
-<div class="card">
-  <h1>นางสาว ณัฐธิดา ประเสริฐแก้ว</h1>
-  <div class="role">ผู้พัฒนาเกมทายจังหวัดไทย 🇹🇭</div>
+<div class="container">
 
-  <div class="social">
-  <a href="https://www.facebook.com/share/1CbVzMx1xT/" class="facebook">Facebook</a>
+  <!-- คนที่ 1 -->
+  <div class="card">
+    <h1>นางสาว ณัฐธิดา ประเสริฐแก้ว</h1>
+    <div class="role">ผู้พัฒนาเกมทายจังหวัดไทย 🇹🇭</div>
 
-  <a href="#" class="email"
-     onclick="alert('Email: your@email.com')">
-     Email
-  </a>
+    <div class="social">
+      <a href="#" class="facebook">Facebook</a>
+      <a href="#" class="email" onclick="alert('Email: your@email.com')">Email</a>
+      <a href="#" class="github" onclick="alert('GitHub: ยังไม่มี')">GitHub</a>
+    </div>
+  </div>
 
-  <a href="#" class="github"
-     onclick="alert('GitHub: ยังไม่มี')">
-     GitHub
-  </a>
+  <!-- คนที่ 2 -->
+  <div class="card">
+    <h1>ชื่อผู้พัฒนาคนที่ 2</h1>
+    <div class="role">ผู้พัฒนาเกมทายจังหวัดไทย 🇹🇭</div>
+
+    <div class="social">
+      <a href="#" class="facebook">Facebook</a>
+      <a href="#" class="email" onclick="alert('Email: example@email.com')">Email</a>
+      <a href="#" class="github" onclick="alert('GitHub: ยังไม่มี')">GitHub</a>
+    </div>
+  </div>
+
 </div>
 
+<div style="text-align:center; width:100%;">
   <a href="index.html" class="home-btn">⬅ กลับหน้าหลัก</a>
 </div>
 
